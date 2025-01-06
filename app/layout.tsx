@@ -18,16 +18,20 @@ export const metadata: Metadata = {
   description: "Track how much money NYC's congestion pricing has raised for the MTA in real-time since January 5, 2025.",
   openGraph: {
     type: "website",
-    url: "https://congestion-counter.nyc",
+    url: "https://www.congestionrevenue.nyc/",
     title: "NYC Congestion Zone Revenue Calculator | Live Counter",
     description: "Track how much money NYC's congestion pricing has raised for the MTA in real-time since January 5, 2025.",
-    images: [{ url: "https://congestion-counter.nyc/og-image.jpg" }],
+    images: [{
+      url: "/og-image.jpg",
+      width: 1200,
+      height: 630,
+      alt: "NYC Congestion Zone Revenue Calculator"
+    }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "NYC Congestion Zone Revenue Calculator | Live Counter",
-    description: "Track how much money NYC's congestion pricing has raised for the MTA in real-time since January 5, 2025.",
-    images: ["https://congestion-counter.nyc/og-image.jpg"],
+    site: "@ezramechaber",
+    images: "/og-image.jpg",
   },
 };
 
