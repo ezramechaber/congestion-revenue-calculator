@@ -119,7 +119,7 @@ const RevenueCounter = () => {
               NYT&apos;s reporting of $500 million annually
             </a>
             . See the project on GitHub{' '}
-            <a href="https://www.congestionrevenue.nyc/" 
+            <a href="https://github.com/ezramechaber/congestion-revenue-calculator" 
                className="text-blue-600 hover:underline">
               here
             </a>
