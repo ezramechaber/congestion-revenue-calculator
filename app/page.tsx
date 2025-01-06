@@ -1,6 +1,5 @@
 'use client';
 import React, { useState, useEffect } from 'react';
-import { Twitter, Share } from 'lucide-react';
 
 const RevenueCounter = () => {
   const [currentRevenue, setCurrentRevenue] = useState(0);
@@ -10,7 +9,7 @@ const RevenueCounter = () => {
   useEffect(() => {
     const calculateRevenue = () => {
       const now = new Date();
-      const secondsElapsed = (now - START_DATE) / 1000;
+      const secondsElapsed = (now.getTime() - START_DATE.getTime()) / 1000;
       const revenue = Math.max(0, secondsElapsed * REVENUE_PER_SECOND);
       setCurrentRevenue(revenue);
     };
@@ -18,9 +17,9 @@ const RevenueCounter = () => {
     calculateRevenue();
     const interval = setInterval(calculateRevenue, 100);
     return () => clearInterval(interval);
-  }, []);
+  }, [START_DATE]);
 
-  const formatRevenue = (amount) => {
+  const formatRevenue = (amount: number) => {
     return new Intl.NumberFormat('en-US', {
       style: 'currency',
       currency: 'USD',
@@ -29,7 +28,7 @@ const RevenueCounter = () => {
     }).format(amount);
   };
 
-  const handleShare = (platform) => {
+  const handleShare = (platform: 'twitter' | 'threads' | 'bluesky') => {
     const text = `NYC's congestion pricing has raised ${formatRevenue(currentRevenue)} for the MTA since January 5`;
     const url = window.location.href;
     let shareUrl;
@@ -65,7 +64,7 @@ const RevenueCounter = () => {
           <div className="space-y-4">
             <p className="text-3xl text-center">💸🚗🗽</p>
             <p className="text-xl md:text-2xl text-center text-gray-700 leading-relaxed">
-              Here's how much money NYC has raised for the MTA since congestion pricing went into effect on January 5, 2025.
+              Here&apos;s how much money NYC has raised for the MTA since congestion pricing went into effect on January 5, 2025.
             </p>
           </div>
         </header>
@@ -117,7 +116,7 @@ const RevenueCounter = () => {
             Revenue per second calculated at an average of $15.85 based on the{' '}
             <a href="https://www.nytimes.com/2025/01/05/nyregion/nyc-congestion-pricing-tolls.html?unlocked_article_code=1.nE4.bvBR.7CgA_PlYRmMj&smid=url-share" 
                className="text-blue-600 hover:underline">
-              NYT's reporting of $500 million annually
+              NYT&apos;s reporting of $500 million annually
             </a>
             . See the project on GitHub{' '}
             <a href="https://www.github.com/@ezramechaber" 
