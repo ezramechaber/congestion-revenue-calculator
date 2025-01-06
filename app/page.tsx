@@ -69,7 +69,7 @@ const RevenueCounter = () => {
           </div>
         </header>
 
-        <div className="bg-white border border-black py-8 px-12 space-y-6">
+        <div className="bg-white border border-black py-8 px-6 sm:px-12 space-y-6">
           <div className="font-mono text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-6xl font-bold text-center text-green-600 tabular-nums">
             {formatRevenue(currentRevenue)}
           </div>
@@ -119,7 +119,7 @@ const RevenueCounter = () => {
               NYT&apos;s reporting of $500 million annually
             </a>
             . See the project on GitHub{' '}
-            <a href="https://www.github.com/@ezramechaber" 
+            <a href="https://www.congestionrevenue.nyc/" 
                className="text-blue-600 hover:underline">
               here
             </a>
