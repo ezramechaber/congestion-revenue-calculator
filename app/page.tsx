@@ -29,7 +29,7 @@ const RevenueCounter = () => {
   };
 
   const handleShare = (platform: 'twitter' | 'threads' | 'bluesky') => {
-    const text = `NYC's congestion pricing has raised ${formatRevenue(currentRevenue)} for the MTA since January 5`;
+    const text = `NYC's congestion pricing is projected to have raised ${formatRevenue(currentRevenue)} for the MTA since January 5`;
     const url = window.location.href;
     let shareUrl;
 
@@ -64,7 +64,7 @@ const RevenueCounter = () => {
           <div className="space-y-4">
             <p className="text-3xl text-center">💸🚗🗽</p>
             <p className="text-xl md:text-2xl text-center text-gray-700 leading-relaxed">
-              Here&apos;s how much money NYC has raised for the MTA since congestion pricing went into effect on January 5, 2025.
+              Project how much money NYC has raised for the MTA since congestion pricing went into effect on January 5, 2025.
             </p>
           </div>
         </header>
@@ -112,6 +112,7 @@ const RevenueCounter = () => {
         </div>
 
         <footer className="text-sm md:text-base text-gray-600 space-y-3">
+        <p className="leading-relaxed"><strong>How is this calculated?</strong></p>
           <p className="leading-relaxed">
             Revenue per second calculated at an average of $15.85 based on the{' '}
             <a href="https://www.nytimes.com/2025/01/05/nyregion/nyc-congestion-pricing-tolls.html?unlocked_article_code=1.nE4.bvBR.7CgA_PlYRmMj&smid=url-share" 

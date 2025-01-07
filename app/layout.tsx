@@ -14,13 +14,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "NYC Congestion Zone Revenue Calculator | Live Counter",
-  description: "Track how much money NYC's congestion pricing has raised for the MTA in real-time since January 5, 2025.",
+  title: "NYC Congestion Zone Revenue Calculator",
+  description: "Project how much money NYC's congestion pricing has raised for the MTA in real-time since January 5, 2025.",
   openGraph: {
     type: "website",
     url: "https://www.congestionrevenue.nyc/",
-    title: "NYC Congestion Zone Revenue Calculator | Live Counter",
-    description: "Track how much money NYC's congestion pricing has raised for the MTA in real-time since January 5, 2025.",
+    title: "NYC Congestion Zone Revenue Calculator",
+    description: "Project how much money NYC's congestion pricing has raised for the MTA in real-time since January 5, 2025.",
     images: [{
       url: "/og-image.jpg",
       width: 1200,
