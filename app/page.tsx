@@ -119,20 +119,17 @@ const RevenueCounter = () => {
                className="text-blue-600 hover:underline">
               NYT&apos;s reporting of $500 million annually
             </a>
-            . See the project on GitHub{' '}
-            <a href="https://www.congestionrevenue.nyc/" 
-               className="text-blue-600 hover:underline">
-              here
-            </a>
-            .
-          </p>
-          <p>
-            Created by{' '}
+            . This is a linear projection, and doesn't take into account peak vs. off-peak, holidays or rush hour, etc.</p>
+          <p className="leading-relaxed">
+          {' '}<a href="https://www.congestionrevenue.nyc/" 
+               className="text-blue-600 hover:underline">See the project on GitHub</a>
+              
+              {' '}| Created by{' '}
             <a href="https://www.ezramechaber.com" 
                className="text-blue-600 hover:underline">
               Ezra Mechaber
             </a>
-            .
+            
           </p>
         </footer>
       </div>
