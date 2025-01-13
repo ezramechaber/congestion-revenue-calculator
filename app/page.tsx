@@ -70,7 +70,7 @@ const RevenueCounter = () => {
         </header>
 
         <div className="bg-white border border-black py-8 px-6 sm:px-12 space-y-6">
-          <div className="font-mono text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-6xl font-bold text-center text-green-600 tabular-nums">
+          <div className="font-mono text-3xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-6xl font-bold text-center text-green-600 tabular-nums">
             {formatRevenue(currentRevenue)}
           </div>
           <div className="text-base md:text-lg text-center text-gray-600">
