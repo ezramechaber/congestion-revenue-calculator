@@ -121,7 +121,7 @@ const RevenueCounter = () => {
             </a>
             . This is a linear projection, and doesn&apos;t take into account peak vs. off-peak, holidays or rush hour, etc.</p>
           <p className="leading-relaxed">
-          {' '}<a href="https://www.congestionrevenue.nyc/" 
+          {' '}<a href="https://github.com/ezramechaber/congestion-revenue-calculator" 
                className="text-blue-600 hover:underline">See the project on GitHub</a>
               
               {' '}| Created by{' '}
