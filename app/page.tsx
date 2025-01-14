@@ -17,7 +17,7 @@ const RevenueCounter = () => {
     calculateRevenue();
     const interval = setInterval(calculateRevenue, 100);
     return () => clearInterval(interval);
-  }, [START_DATE]);
+  }, []);
 
   const formatRevenue = (amount: number) => {
     return new Intl.NumberFormat('en-US', {
